@@ -562,6 +562,7 @@ pre code {
   margin-right: auto;
   margin-left: auto;
   background-color: white;
+  color: #000;
 }
 
 @media (min-width: 576px) {
