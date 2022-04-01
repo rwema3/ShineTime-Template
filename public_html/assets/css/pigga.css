@@ -562,7 +562,6 @@ pre code {
   margin-right: auto;
   margin-left: auto;
   background-color: white;
-  color: #000;
 }
 
 @media (min-width: 576px) {
@@ -4558,6 +4557,7 @@ input[type="button"].btn-block {
 }
 
 .navbar {
+  background-color: white;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4659,7 +4659,7 @@ input[type="button"].btn-block {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
+  background-color: white;
   border: 1px solid transparent;
   border-radius: 0.2rem;
 }
@@ -5112,7 +5112,7 @@ input[type="button"].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
