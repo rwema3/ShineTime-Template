@@ -1,0 +1,29 @@
+p {
+	font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
+	font-weight: 400 ;
+	opacity: .7;
+}
+
+pre {
+	border: 2px solid $border-color;
+	padding: 15px;
+	border-radius: $border-radius;
+	background: $gray-100;
+
+	code,
+	.code {
+		color: $gray-600;
+	}
+}
+
+@include media-breakpoint-up (lg) {
+
+	p {
+		font-size: 16px;
+	}
+}
+
+
+hr {
+	margin: 10px 0 25px;
+}

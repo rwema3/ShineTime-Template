@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+    width: 5px;
+    background: $gray-900;
+}
+::-webkit-scrollbar-thumb {
+    background: darken($primary,5%);
+    border-radius: 20px;
+
+    &:hover {
+        background: $primary;
+    }
+}
+

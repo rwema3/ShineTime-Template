@@ -1,0 +1,118 @@
+section {
+	padding: 80px 0;
+
+	&:nth-child(odd) {
+		background: lighten($gray-200, 5%);
+	}
+
+	.section-devider {
+		display: block;
+		height: 1px;
+		margin: 50px 0;
+
+		&.transparent {
+			background-color: transparent;
+		}
+	}
+
+	&.py-sm {
+		padding-top: 50px !important;
+		padding-bottom: 50px !important;
+	}
+	&.py-lg {
+		padding-top: 140px !important;
+		padding-bottom: 140px !important;
+	}
+
+	&.pattern-style-1 {
+		background-image: url(../imgs/style-1.png);
+	}
+	&.pattern-style-2 {
+		background-image: url(../imgs/style-2.png);
+	}
+	&.pattern-style-3 {
+		background-image: url(../imgs/style-3.png);
+	}
+	&.pattern-style-4 {
+		background-image: url(../imgs/style-4.png);
+	}
+
+	&.has-overlay {
+		position: relative;
+
+		* {
+			position: static;
+			z-index: 9;
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba($white,.6);
+			z-index: 1;
+		}
+	}
+
+	&.has-img-bg {
+		position: relative;
+		background: url(../imgs/section.jpg) no-repeat center top fixed;
+		background-size: cover;
+		color: $white;
+
+		* {
+			position: relative;
+			z-index: 100;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(darken($primary,50%),.7);
+			z-index: 1;
+		}
+	}
+}
+
+.section-subtitle {
+	font-size: calc(14px + (17 - 14) * ((100vw - 320px) / (1200 - 320)));
+	font-weight: 400;
+	margin-bottom: 0px;
+	opacity: .4;
+	
+	@include media-breakpoint-up(lg) {
+		font-size: 17px;
+	}
+}
+
+.section-title {
+	font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320))) !important;
+	margin-bottom: 15px; 
+	
+	@include media-breakpoint-up(lg) {
+		font-size: 30px;
+	}
+}
+ 
+.components-section-title {
+	font-size: calc(18px + (23 - 18) * ((100vw - 320px) / (1200 - 320)));
+	margin-bottom: 15px;
+	
+	@include media-breakpoint-up(lg) {
+		font-size: 23px;
+	}
+}
+
+.section-secondary-title {
+	font-size: 17px;
+	opacity: .7;
+	margin-bottom: 15px;
+}

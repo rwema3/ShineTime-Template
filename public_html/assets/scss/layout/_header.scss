@@ -1,0 +1,69 @@
+.header {
+    position: relative;
+    min-height: 650px;
+    background: url(../imgs/header.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($gray-900,.85);
+        color: $white;
+        @include flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .logo {
+            width: 200px;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 0 40px rgba($gray-400,.4));
+        }
+
+        .subtitle {
+            font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1200 - 320)));
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        .title {
+            font-size: calc(30px + (70 - 30) * ((100vw - 320px) / (1200 - 320)));           
+            font-weight: bold;
+        }
+    }
+
+    &.components {
+        min-height: 450px !important;
+        background-position: center bottom;
+
+        .title {
+            font-size: calc(40px + (90 - 40) * ((100vw - 320px) / (1200 - 320)));
+            font-weight: bold;
+
+        }
+    }
+
+
+    &-title {
+        font-size: 2.4rem;
+        font-weight: bold;
+        opacity: .8;
+        color: $dark;
+    }
+
+    // header mini
+    &-mini {
+        min-height: 24rem;
+        height: 24rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+        background: lighten($primary, 25%) !important;
+    }
+}

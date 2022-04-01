@@ -1,0 +1,51 @@
+.navbar {
+
+	&.navbar-light {
+		.navbar-brand {
+			color: rgba($gray-900,.9) !important;
+
+			&:hover {
+				color: $gray-900
+			}
+		}
+	}
+	&.navbar-dark {
+		.navbar-brand {
+			color: rgba($gray-100,.8) !important;
+
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+		
+	.nav-link {
+		font-size: 14px;
+		font-weight: 500; 	
+	}
+
+	// First Navigation
+	&.nav-first {
+		padding: 3px;
+		z-index: 99;
+		border-bottom: 1px solid lighten($gray-900,5%);
+
+		.navbar-brand {
+
+			img {
+				width: 55px;
+			}
+		}
+	}
+
+	// Second navigation
+	&.nav-second {
+		padding: 10px;
+
+		.nav-link {
+			margin-right: 15px;
+			font-size: 13px;
+			opacity: 1;
+		}
+	}
+}	

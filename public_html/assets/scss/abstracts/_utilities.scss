@@ -1,0 +1,77 @@
+// Dark Background
+.bg-dark {
+
+	p {
+		color: $white;
+	}
+
+	a {
+		color: rgba($white,.7);
+
+		&:hover {
+			color: rgba($white,.85);			
+		}
+		&:active {
+			color: $white;			
+		}
+	}
+}
+
+
+// borders
+.border-dark {
+	border-color: lighten($gray-900,5%) !important;
+}
+
+// media object
+.media {
+	img {
+		@include circle(50);
+	}
+}
+
+
+.ob-fitt-cover {
+	object-fit: cover;
+}
+
+
+.dropdown-menu.form {
+	min-width: 300px !important
+}
+
+
+
+.circle-120 {
+	@include circle(150);
+}
+.border-lighter {
+	border-color: $gray-200 !important;
+}
+
+.my-6 {
+	margin-top: 70px;
+	margin-bottom: 70px;
+
+	@include media-breakpoint-down(sm) {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
+.mb-6 {
+	margin-bottom: 65px !important;
+}
+.mb-4 {
+	margin-bottom: 30px !important
+}
+
+.raise-1 { position: relative !important; z-index: 1 !important; }
+.raise-2 { position: relative !important; z-index: 2 !important; }
+.raise-3 { position: relative !important; z-index: 3 !important; }
+.raise-4 { position: relative !important; z-index: 4 !important; }
+.raise-5 { position: relative !important; z-index: 5 !important; }
+.raise-6 { position: relative !important; z-index: 6 !important; }
+.raise-7 { position: relative !important; z-index: 7 !important; }
+.raise-8 { position: relative !important; z-index: 8 !important; }
+.raise-9 { position: relative !important; z-index: 9 !important; }
+.raise-10 { position: relative !important; z-index: 10 !important; }
