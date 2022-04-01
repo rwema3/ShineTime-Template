@@ -561,7 +561,6 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  background-color: white;
 }
 
 @media (min-width: 576px) {
@@ -4557,7 +4556,6 @@ input[type="button"].btn-block {
 }
 
 .navbar {
-  background-color: white;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4659,7 +4657,7 @@ input[type="button"].btn-block {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: white;
+  background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.2rem;
 }
@@ -4959,15 +4957,15 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #00A58C;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: #00A58C;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
-  color: #00A58C;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .navbar-light .navbar-nav .show > .nav-link,
@@ -4978,8 +4976,8 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-toggler {
-  color: #00A58C;
-  border-color: #00A58C;
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -4987,15 +4985,15 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-text {
-  color: #00A58C;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-light .navbar-text a {
-  color: #00A58C;
+  color: rgba(188, 140, 76, 0.9);
 }
 
 .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
-  color: #00A58C;
+  color: rgba(188, 140, 76, 0.9);
 }
 
 .navbar-dark .navbar-brand {
@@ -5015,7 +5013,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {
-  color: #00A58C;
+  color: rgba(255, 255, 255, 0.25);
 }
 
 .navbar-dark .navbar-nav .show > .nav-link,
@@ -5112,7 +5110,7 @@ input[type="button"].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -11241,8 +11239,6 @@ hr {
 
 .navbar.nav-second {
   padding: 10px;
-  color: white;
-  background-color: white;
 }
 
 .navbar.nav-second .nav-link {
